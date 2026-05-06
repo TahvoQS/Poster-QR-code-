@@ -27,38 +27,38 @@
             color: #2c3e50;
         }
 
-        /* New Intro Section Styling */
-        .intro-container {
-            max-width: 1000px;
-            margin: 0 auto 40px auto;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden; /* Keeps image corners rounded */
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            display: flex;
-            flex-wrap: wrap; /* Allows wrapping on mobile */
-            align-items: center;
-        }
+ /* Update your container style */
+.intro-container {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap; 
+    /* THIS IS THE KEY CHANGE: */
+    align-items: flex-start; 
+}
 
-        .intro-image {
-            flex: 1 1 400px; /* Grows, shrinks, starts at 400px */
-            min-height: 300px;
-            background-image: url('https://via.placeholder.com/600x400'); /* REPLACE WITH YOUR IMAGE URL */
-            background-size: cover;
-            background-position: center;
-        }
+.intro-image {
+    flex: 1 1 400px;
+    /* Ensure the height is consistent with the text block */
+    min-height: 400px; 
+    background-image: url('https://i.imgur.com/q54nis0.jpeg'); 
+    background-size: cover;
+    background-position: center;
+}
 
-        .intro-text {
-            flex: 1 1 400px;
-            padding: 40px;
-        }
+.intro-text {
+    flex: 1 1 400px;
+    padding: 40px;
+    /* Ensure no extra top margin on the first paragraph */
+    margin-top: 0; 
+}
 
-        .intro-text p {
-            line-height: 1.6;
-            font-size: 1.1rem;
-            color: #444;
-            margin: 0;
-        }
+.intro-text p {
+    margin-top: 0; /* Keeps the first line of text level with the top of the image */
+}
 
         /* Container for the links */
         .links-container {
@@ -120,24 +120,16 @@
     </div>
 
     <div class="intro-container">
+        <div class="intro-image">
 
-        <blockquote class="imgur-embed-pub" lang="en" data-id="a/jekialg" data-context="false" ><a href="//imgur.com/a/jekialg"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-  
-        <!-- <div class="intro-image">https://i.imgur.com/q54nis0.jpeg</div>  -->
+        </div> 
         
         <div class="intro-text">
             <p>AI-driven cameras have been popping up all around cities are made by Flock Safety, a private company. These cameras record information from every passing vehicle and person and store the following information: 
 
-- 7 to 12 photos of every car
-- License plate information
-- Make, model, and color of your car
-- Bumper stickers
-- Any dents/damage to your car
-- Facial recognition data
-- Race
-- Estimated age
-- Clothing type
-- And more…
+                
+7 to 12 photos of every car, license plate information, make, model, and color of your car, bumper stickers, any dents/damage to your car, facial recognition data, race, stimated age, clothing type, and more…
+
 
 This information is stored in a national database that can be accessed by law enforcement such as local police. However, this data can also be accessed by any other law enforcement agency that has access to the database. This includes agencies like ICE who actively use the cameras to track and deport people without a warrant or probable cause. Additionally, Flock camera data can be accessed by private individuals or companies that have a contract with Flock Safety. 
 
@@ -150,28 +142,28 @@ At CalArts, we value social, artistic, and cultural freedom above all else. Thes
 
     <div class="links-container">
         <a href="https://www.flocksafety.com/products/license-plate-readers" class="link-box" target="_blank">
-            <h2 class="link-title">Flock Safety Official Site</h2>
-            <p class="link-description">The official website detailing the technology and products offered by Flock Safety.</p>
+            <h2 class="link-title">Flock Safety Site</h2>
+            <p class="link-description">Flock Safety website</p>
         </a>
 
         <a href="https://deflock.org" class="link-box" target="_blank">
             <h2 class="link-title">De-Flock</h2>
-            <p class="link-description">A community resource map and guide for identifying and documenting Flock camera locations.</p>
+            <p class="link-description">A great website with information about Flock cameras and a map of known camera locations</p>
         </a>
 
         <a href="https://data.aclum.org/2025/10/07/flock-gives-law-enforcement-all-over-the-country-access-to-your-location/" class="link-box" target="_blank">
-            <h2 class="link-title">ACLU Analysis</h2>
-            <p class="link-description">A detailed report on the civil liberties implications of nationwide location tracking.</p>
+            <h2 class="link-title">Article: Flock Gives Law Enforcement All Over the Country Access to Your Location</h2>
+            <p class="link-description">An article by the Massachusetts ACLU outlining what Flock cameras do and the concerns abou them</p>
         </a>
 
         <a href="https://www.klcc.org/crime-law-justice/2026-01-09/bend-is-the-latest-oregon-city-to-turn-off-flock-cameras" class="link-box" target="_blank">
-            <h2 class="link-title">Bend, Oregon News</h2>
-            <p class="link-description">Coverage of local governments choosing to deactivate AI surveillance systems.</p>
+            <h2 class="link-title">Article: Bend is the latest Oregon city to turn off Flock cameras</h2>
+            <p class="link-description">This article talks about Bend Oregon's decision to de-activate Flock cameras</p>
         </a>
         
         <a href="https://www.youtube.com/watch?v=Pp9MwZkHiMQ" class="link-box" target="_blank">
-            <h2 class="link-title">Educational Video</h2>
-            <p class="link-description">An in-depth look at how AI in police cameras functions and the potential for "function creep."</p>
+            <h2 class="link-title">Video: Breaking The Creepy AI in Police Cameras</h2>
+            <p class="link-description">A great video about AI cameras</p>
         </a>
     </div>
 
