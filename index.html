@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resources</title>
+    
+    <style>
+        /* Base page styling */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        .page-header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        /* Container for the links */
+        .links-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            /* This grid setup automatically scales for mobile. 
+               It creates columns that are at least 300px wide, and stacks them if the screen is smaller. */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 10px;
+        }
+
+        /* Individual link boxes */
+        .link-box {
+            background-color: #ffffff;
+            border: 1px solid #e1e4e8;
+            border-radius: 10px;
+            padding: 25px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Hover effect to make it feel interactive */
+        .link-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+
+        /* Title inside the box */
+        .link-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2980b9;
+            margin: 0 0 10px 0;
+        }
+
+        /* Description inside the box */
+        .link-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #555555;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-header">
+        <h1>Flock AI Camera Information and Resources</h1>
+    </div>
+
+    <div class="links-container">
+        <a href="https://www.flocksafety.com/products/license-plate-readers?utm_theme=evergreen&utm_tactic=evergreen&utm_medium=ppc&utm_source=bing&utm_campaign=byn_brd_sem_lpr_mx&utm_content=%7Butmcontent%7D&utm_term=flock%20plate%20reader&msclkid=70fa37cdedbc1f7dcb035e375fae8050" class="link-box" target="_blank">
+            <h2 class="link-title">Flock Safety</h2>
+            <p class="link-description">Flock Safety website</p>
+        </a>
+
+        <a href="https://deflock.org" class="link-box" target="_blank">
+            <h2 class="link-title">De-Flock</h2>
+            <p class="link-description">A great website with information about Flock cameras and a map of known camera locations.</p>
+        </a>
+
+        <a href="https://data.aclum.org/2025/10/07/flock-gives-law-enforcement-all-over-the-country-access-to-your-location/" class="link-box" target="_blank">
+            <h2 class="link-title">Article: Flock Gives Law Enforcement All Over the Country Access to Your Location</h2>
+            <p class="link-description">An article by the Massachusetts ACLU outlining what Flock cameras do asd the concerns abou them.</p>
+        </a>
+
+        <a href="https://www.klcc.org/crime-law-justice/2026-01-09/bend-is-the-latest-oregon-city-to-turn-off-flock-cameras" class="link-box" target="_blank">
+            <h2 class="link-title">Article: Bend is the latest Oregon city to turn off Flock cameras</h2>
+            <p class="link-description">This article talks about Bend Oregon's decision to de-activate Flock cameras.</p>
+        </a>
+        
+        <a href="https://www.youtube.com/watch?v=Pp9MwZkHiMQ" class="link-box" target="_blank">
+            <h2 class="link-title">Breaking The Creepy AI in Police Cameras</h2>
+            <p class="link-description">A great video about AI cameras.</p>
+        </a>
+    </div>
+
+</body>
+</html>
